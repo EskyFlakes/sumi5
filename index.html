@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Message</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 600% 600%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            flex-direction: column;
+            position: relative;
+            animation: rainbowBG 10s ease infinite;
+        }
+        
+        @keyframes rainbowBG {
+            0% { background-position: 0% 0%; }
+            14% { background-position: 100% 0%; }
+            28% { background-position: 100% 100%; }
+            42% { background-position: 0% 100%; }
+            56% { background-position: 0% 0%; }
+            70% { background-position: 100% 0%; }
+            84% { background-position: 100% 100%; }
+            100% { background-position: 0% 100%; }
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+            margin: 0;
+            animation: rainbow-text 2s infinite linear;
+            z-index: 1;
+        }
+        
+        h2 {
+            color: #ff69b4;
+            font-size: 5rem;
+            text-align: center;
+            text-shadow: 2px 2px 5px #ff1493;
+            margin-top: 20px;
+            z-index: 1;
+        }
+        
+        img.cake {
+            margin-top: 30px;
+            width: 300px; /* Increased the size of the cake */
+            height: auto;
+            animation: wiggle 1s infinite ease-in-out;
+            z-index: 1;
+        }
+        
+        img.gif {
+            width: 100px; /* Default size for GIFs */
+            height: auto;
+            position: absolute;
+            z-index: 0;
+        }
+        
+        .gif1 { top: 50px; left: 20%; }
+        .gif2 { top: 50px; right: 20%; }
+        .gif3 { bottom: 100px; left: 20%; }
+        .gif4 { bottom: 100px; right: 20%; }
+        .gif5 { bottom: 914px; right: 45%; width: 200px !important; height: 150px !important; }
+        .gif6 { bottom: 0px; right: 0px; width: 250px !important; height: 250px !important; }
+        .gif7 { bottom: 0px; left: 0px; width: 250px !important; height: 250px !important; }
+        .gif8 { bottom: 0px; right: 25%; width: 250px !important; height: 250px !important; }
+        .gif9 { bottom: 0px; left: 25%; width: 250px !important; height: 250px !important; }
+        .gif10 { top: 40%; left: 20%; width: 20% !important; height: 20% !important; }
+        .gif11 { top: 40%; right: 20%; width: 20% !important; height: 20% !important; }
+        .gif12 { top: 0%; right: 0%; width: 20% !important; height: 20% !important; }
+        .gif13 { top: 0%; left: 0%; width: 20% !important; height: 20% !important; }
+        .gif14 { top: 40%; left:2%; width: 20% !important; height: 20% !important; animation: wiggle 2s infinite ease-in-out; z-index: 1; }
+        .gif15 { top: 40%; right:5%; width: 20% !important; height: 20% !important; animation: wiggle 2s infinite ease-in-out; z-index: 1; }
+        .gif16 { bottom: 2%; left: 40%; width: 20% !important; height: 20% !important; animation: wiggle 0.5s infinite ease-in-out; z-index: 1; }
+        .gif17 { top: 0%; right: 40%; width: 20% !important; height: 20% !important; }
+        
+        @keyframes rainbow-text {
+            0% { color: red; }
+            16% { color: orange; }
+            32% { color: yellow; }
+            48% { color: green; }
+            64% { color: blue; }
+            80% { color: indigo; }
+            100% { color: violet; }
+        }
+        
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>HAPPY BIRTHDAY!!!</h1>
+    <h2>KATSUMIIIICHANNNN</h2>
+    <img src="katsumi.png" alt="Birthday Cake" class="cake">
+    
+    <!-- Add GIFs near the text -->
+    <img src="cwif-wif.gif" alt="Cwif Gif" class="gif gif1">
+    <img src="cwif-wif.gif" alt="Cwif Gif" class="gif gif2">
+    <img src="cwif-wif.gif" alt="Cwif Gif" class="gif gif3">
+    <img src="cwif-wif.gif" alt="Cwif Gif" class="gif gif4">
+    <img src="cat-kitty.gif" alt="Cat Kitty Gif" class="gif gif5">
+    <img src="chat-pouce.gif" alt="Cat Kitty Gif" class="gif gif6">
+    <img src="fat-cat-angry-cat.gif" alt="Cat Kitty Gif" class="gif gif7">
+    <img src="motion-cat-transparent.gif" alt="Cat Kitty Gif" class="gif gif8">
+    <img src="silly-cat-cat.gif" alt="Cat Kitty Gif" class="gif gif9">
+    <img src="dancing-cat-cat-dance.gif" alt="Cat Kitty Gif" class="gif gif10">
+    <img src="cat.gif" alt="Cat Kitty Gif" class="gif gif11">
+    <img src="maxwell-maxwell-cat.gif" alt="Cat Kitty Gif" class="gif gif12">
+    <img src="maxwell-maxwell-spin.gif" alt="Cat Kitty Gif" class="gif gif13">
+    <img src="katt-removebg.png" alt="Cat Kitty Gif" class="gif gif14">
+    <img src="kat-removebg.png" alt="Cat Kitty Gif" class="gif gif15">
+    <img src="ducati-panigale.gif" alt="Cat Kitty Gif" class="gif gif16">
+    <img src="valorant-neon-agent-select-valorant.gif" alt="Cat Kitty Gif" class="gif gif17">
+</body>
+</html>
